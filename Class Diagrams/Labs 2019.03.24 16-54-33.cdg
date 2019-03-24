@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Labs">
+  <ClassDiagramComponents>
+    <Class name="Quotation" package="Mod1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="DisplayQuotation" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="author"/>
+          <Argument type="String" name="quotation"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="QuotationTest" package="Mod1" visibility="public" xPosition="116.0" yPosition="237.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Account" package="Mod2.domain" visibility="public" xPosition="438.0" yPosition="222.0">
+      <Fields>
+        <Field name="balance" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="balance"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="deposit" returnType="void" visibility="public">
+          <Argument type="double" name="amt"/>
+        </Method>
+        <Method name="withdraw" returnType="void" visibility="public">
+          <Argument type="double" name="amt"/>
+        </Method>
+        <Method name="getBalance" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestAccount" package="Mod2.test" visibility="public" xPosition="690.0" yPosition="78.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

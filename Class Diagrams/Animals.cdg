@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Lab3">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="" visibility="public" xPosition="317.0" yPosition="36.0">
+      <Fields>
+        <Field name="legs" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="legs"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getLegrCount" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Pet" package="" visibility="public" xPosition="286.0" yPosition="316.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="legs"/>
+          <Argument type="String" name="name"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Spider" package="" visibility="public" xPosition="579.0" yPosition="316.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cat" package="" visibility="public" xPosition="292.0" yPosition="628.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Dog" package="" visibility="public" xPosition="498.0" yPosition="628.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Fish" package="" visibility="public" xPosition="86.0" yPosition="628.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Cat" target="Pet"/>
+    <IsRelation name="is" source="Dog" target="Pet"/>
+    <IsRelation name="is" source="Pet" target="Animal"/>
+    <IsRelation name="is" source="Fish" target="Pet"/>
+    <IsRelation name="is" source="Spider" target="Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="com.mybank.domain">
+  <ClassDiagramComponents>
+    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="319.0" yPosition="52.0">
+      <Fields>
+        <Field name="balance" type="double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="protected">
+          <Argument type="double" name="balance"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="deposit" returnType="boolean" visibility="public">
+          <Argument type="double" name="amt"/>
+        </Method>
+        <Method name="withdraw" returnType="boolean" visibility="public">
+          <Argument type="double" name="amt"/>
+        </Method>
+        <Method name="getBalance" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="697.0" yPosition="52.0">
+      <Fields>
+        <Field name="customers" type="Customer[]" visibility="private"/>
+        <Field name="numOfClients" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getCustomer" returnType="Customer" visibility="public">
+          <Argument type="int" name="cusNo"/>
+        </Method>
+        <Method name="addCustomer" returnType="void" visibility="public">
+          <Argument type="Customer" name="newCustomer"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="276.0" yPosition="516.0">
+      <Fields>
+        <Field name="overdraftAmount" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="initBalance"/>
+          <Argument type="double" name="overdraftAmount"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="initBalance"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="withdraw" returnType="boolean" visibility="public">
+          <Argument type="double" name="amt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Customer" package="com.mybank.domain" visibility="public" xPosition="713.0" yPosition="339.0">
+      <Fields>
+        <Field name="accounts" type="Account[]" visibility="private"/>
+        <Field name="fullName" type="String" visibility="private"/>
+        <Field name="customerNumber" type="int" visibility="private"/>
+        <Field name="customerNumberBase" type="int" visibility="private" isStatic="true"/>
+        <Field name="numOfAccounts" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="fullName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAccount" returnType="Account" visibility="public">
+          <Argument type="int" name="accNo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="addAccount" returnType="void" visibility="public">
+          <Argument type="Account" name="acc"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="44.0" yPosition="339.0">
+      <Fields>
+        <Field name="interestRate" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="initBalance"/>
+          <Argument type="double" name="interestRate"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addInterestRate" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.mybank.domain.Customer" target="com.mybank.domain.Account" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mybank.domain.Bank" target="com.mybank.domain.Customer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.mybank.domain.CheckingAccount" target="com.mybank.domain.Account"/>
+    <IsRelation name="is" source="com.mybank.domain.SavingsAccount" target="com.mybank.domain.Account"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

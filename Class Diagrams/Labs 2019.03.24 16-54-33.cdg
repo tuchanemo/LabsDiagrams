@@ -12,7 +12,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="QuotationTest" package="Mod1" visibility="public" xPosition="116.0" yPosition="237.0">
+    <Class name="QuotationTest" package="Mod1" visibility="public" xPosition="20.0" yPosition="260.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -21,7 +21,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Account" package="Mod2.domain" visibility="public" xPosition="438.0" yPosition="222.0">
+    <Class name="Account" package="Mod2.domain" visibility="public" xPosition="256.0" yPosition="330.0">
       <Fields>
         <Field name="balance" type="double" visibility="private"/>
       </Fields>
@@ -40,7 +40,7 @@
         <Method name="getBalance" returnType="double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="TestAccount" package="Mod2.test" visibility="public" xPosition="690.0" yPosition="78.0">
+    <Class name="TestAccount" package="Mod2.test" visibility="public" xPosition="451.0" yPosition="110.0">
       <Fields/>
       <Constructors/>
       <Methods>

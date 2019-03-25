@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Lab3">
   <ClassDiagramComponents>
-    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="165.0" yPosition="76.0">
+    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="116.0" yPosition="38.0">
       <Fields>
         <Field name="balance" type="double" visibility="protected"/>
       </Fields>
@@ -21,7 +21,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="48.0" yPosition="654.0">
+    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="13.0" yPosition="474.0">
       <Fields>
         <Field name="interestRate" type="double" visibility="private"/>
       </Fields>
@@ -33,7 +33,7 @@
       </Constructors>
       <Methods/>
     </Class>
-    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="576.0" yPosition="616.0">
+    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="252.0" yPosition="617.0">
       <Fields>
         <Field name="overdraftAmount" type="double" visibility="private"/>
       </Fields>
@@ -52,7 +52,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Customet" package="com.mybank.domain" visibility="public" xPosition="472.0" yPosition="94.0">
+    <Class name="Customet" package="com.mybank.domain" visibility="public" xPosition="390.0" yPosition="229.0">
       <Fields>
         <Field name="accounts" type="Account[]" visibility="private"/>
         <Field name="fullName" type="String" visibility="private"/>
@@ -72,7 +72,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="749.0" yPosition="95.0">
+    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="538.0" yPosition="38.0">
       <Fields>
         <Field name="customers" type="Customer[]" visibility="private"/>
       </Fields>

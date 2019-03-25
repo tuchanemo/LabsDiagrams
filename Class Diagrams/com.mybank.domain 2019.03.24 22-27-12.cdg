@@ -22,7 +22,7 @@
         <Method name="getBalance" returnType="double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="697.0" yPosition="52.0">
+    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="677.0" yPosition="52.0">
       <Fields>
         <Field name="customers" type="Customer[]" visibility="private"/>
         <Field name="numOfClients" type="int" visibility="private"/>
@@ -98,8 +98,8 @@
   </ClassDiagramComponents>
   <ClassDiagramRelations>
     <UseRelation source="com.mybank.domain.Customer" target="com.mybank.domain.Account" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.mybank.domain.SavingsAccount" target="com.mybank.domain.Account"/>
     <UseRelation source="com.mybank.domain.Bank" target="com.mybank.domain.Customer" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="com.mybank.domain.CheckingAccount" target="com.mybank.domain.Account"/>
-    <IsRelation name="is" source="com.mybank.domain.SavingsAccount" target="com.mybank.domain.Account"/>
   </ClassDiagramRelations>
 </ClassDiagram>

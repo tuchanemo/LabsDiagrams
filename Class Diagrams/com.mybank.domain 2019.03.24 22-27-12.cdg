@@ -2,7 +2,7 @@
 
 <ClassDiagram name="com.mybank.domain">
   <ClassDiagramComponents>
-    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="319.0" yPosition="52.0">
+    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="556.0" yPosition="308.0">
       <Fields>
         <Field name="balance" type="double" visibility="protected"/>
       </Fields>
@@ -22,7 +22,7 @@
         <Method name="getBalance" returnType="double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="677.0" yPosition="52.0">
+    <Class name="Bank" package="com.mybank.domain" visibility="public" xPosition="110.0" yPosition="34.0">
       <Fields>
         <Field name="customers" type="Customer[]" visibility="private"/>
         <Field name="numOfClients" type="int" visibility="private"/>
@@ -39,7 +39,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="276.0" yPosition="516.0">
+    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="497.0" yPosition="631.0">
       <Fields>
         <Field name="overdraftAmount" type="double" visibility="private"/>
       </Fields>
@@ -58,7 +58,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Customer" package="com.mybank.domain" visibility="public" xPosition="713.0" yPosition="339.0">
+    <Class name="Customer" package="com.mybank.domain" visibility="public" xPosition="146.0" yPosition="308.0">
       <Fields>
         <Field name="accounts" type="Account[]" visibility="private"/>
         <Field name="fullName" type="String" visibility="private"/>
@@ -81,7 +81,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="44.0" yPosition="339.0">
+    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="110.0" yPosition="631.0">
       <Fields>
         <Field name="interestRate" type="double" visibility="private"/>
       </Fields>
@@ -97,9 +97,9 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation source="com.mybank.domain.Customer" target="com.mybank.domain.Account" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="com.mybank.domain.SavingsAccount" target="com.mybank.domain.Account"/>
-    <UseRelation source="com.mybank.domain.Bank" target="com.mybank.domain.Customer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mybank.domain.Customer" target="com.mybank.domain.Account" sourceCardinality="1..1" targetCardinality="1..1"/>
     <IsRelation name="is" source="com.mybank.domain.CheckingAccount" target="com.mybank.domain.Account"/>
+    <UseRelation source="com.mybank.domain.Bank" target="com.mybank.domain.Customer" sourceCardinality="1..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>

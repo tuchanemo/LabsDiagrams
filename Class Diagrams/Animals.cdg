@@ -16,7 +16,7 @@
         <Method name="getLegrCount" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Pet" package="" visibility="public" xPosition="286.0" yPosition="316.0">
+    <Class name="Pet" package="" visibility="public" xPosition="160.0" yPosition="258.0">
       <Fields>
         <Field name="name" type="String" visibility="private"/>
       </Fields>
@@ -34,7 +34,7 @@
         <Method name="getName" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Spider" package="" visibility="public" xPosition="579.0" yPosition="316.0">
+    <Class name="Spider" package="" visibility="public" xPosition="498.0" yPosition="319.0">
       <Fields/>
       <Constructors/>
       <Methods/>
@@ -58,8 +58,8 @@
   <ClassDiagramRelations>
     <IsRelation name="is" source="Cat" target="Pet"/>
     <IsRelation name="is" source="Dog" target="Pet"/>
-    <IsRelation name="is" source="Pet" target="Animal"/>
-    <IsRelation name="is" source="Fish" target="Pet"/>
     <IsRelation name="is" source="Spider" target="Animal"/>
+    <IsRelation name="is" source="Fish" target="Pet"/>
+    <IsRelation name="is" source="Pet" target="Animal"/>
   </ClassDiagramRelations>
 </ClassDiagram>

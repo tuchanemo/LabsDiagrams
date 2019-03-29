@@ -2,7 +2,7 @@
 
 <ClassDiagram name="AnimalsMod4">
   <ClassDiagramComponents>
-    <Class name="Animal" package="animals" visibility="public" isAbstract="true" xPosition="402.0" yPosition="74.0">
+    <Class name="Animal" package="animals" visibility="public" isAbstract="true" xPosition="402.0" yPosition="22.0">
       <Fields>
         <Field name="legs" type="int" visibility="protected"/>
       </Fields>

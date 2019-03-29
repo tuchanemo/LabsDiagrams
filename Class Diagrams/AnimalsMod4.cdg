@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AnimalsMod4">
+  <ClassDiagramComponents>
+    <Class name="Animal" package="animals" visibility="public" isAbstract="true" xPosition="402.0" yPosition="74.0">
+      <Fields>
+        <Field name="legs" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="protected">
+          <Argument type="int" name="legs"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="walk" returnType="void" visibility="public"/>
+        <Method name="eat" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Spider" package="animals" visibility="public" xPosition="111.0" yPosition="198.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="eat" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fish" package="animals" visibility="public" xPosition="583.0" yPosition="447.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="n"/>
+        </Method>
+        <Method name="play" returnType="void" visibility="public"/>
+        <Method name="walk" returnType="void" visibility="public"/>
+        <Method name="eat" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cat" package="animals" visibility="public" xPosition="111.0" yPosition="447.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="n"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="n"/>
+        </Method>
+        <Method name="play" returnType="void" visibility="public"/>
+        <Method name="eat" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Pet" package="animals" visibility="public" xPosition="401.0" yPosition="794.0">
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="n"/>
+        </Method>
+        <Method name="play" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="animals.Spider" target="animals.Animal"/>
+    <IsRelation name="is" source="animals.Cat" target="animals.Animal"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="animals.Fish" target="animals.Pet"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="animals.Cat" target="animals.Pet"/>
+    <IsRelation name="is" source="animals.Fish" target="animals.Animal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

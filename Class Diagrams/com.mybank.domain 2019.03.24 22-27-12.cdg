@@ -2,7 +2,7 @@
 
 <ClassDiagram name="com.mybank.domain">
   <ClassDiagramComponents>
-    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="556.0" yPosition="308.0">
+    <Class name="Account" package="com.mybank.domain" visibility="public" xPosition="542.0" yPosition="365.0">
       <Fields>
         <Field name="balance" type="double" visibility="protected"/>
       </Fields>
@@ -39,7 +39,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="497.0" yPosition="631.0">
+    <Class name="CheckingAccount" package="com.mybank.domain" visibility="public" xPosition="556.0" yPosition="702.0">
       <Fields>
         <Field name="overdraftAmount" type="double" visibility="private"/>
       </Fields>
@@ -81,7 +81,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="110.0" yPosition="631.0">
+    <Class name="SavingsAccount" package="com.mybank.domain" visibility="public" xPosition="110.0" yPosition="721.0">
       <Fields>
         <Field name="interestRate" type="double" visibility="private"/>
       </Fields>
@@ -97,9 +97,9 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <IsRelation name="is" source="com.mybank.domain.SavingsAccount" target="com.mybank.domain.Account"/>
     <UseRelation source="com.mybank.domain.Customer" target="com.mybank.domain.Account" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="com.mybank.domain.CheckingAccount" target="com.mybank.domain.Account"/>
     <UseRelation source="com.mybank.domain.Bank" target="com.mybank.domain.Customer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.mybank.domain.SavingsAccount" target="com.mybank.domain.Account"/>
+    <IsRelation name="is" source="com.mybank.domain.CheckingAccount" target="com.mybank.domain.Account"/>
   </ClassDiagramRelations>
 </ClassDiagram>
